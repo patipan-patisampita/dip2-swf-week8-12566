@@ -24,16 +24,18 @@
                                 </tr>
                             </thead>
                             <tbody class="table-group-divider">
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>@mdo</td>
-                                    <td>039520230</td>
-                                    <td>designation</td>
-                                    <td>status</td>
-                                    <td>Edit</td>
-                                    <td>Delete</td>
-                                </tr>
+                                @foreach ($employee as $empdata)
+                                    <tr>
+                                        <th scope="row">{{ $empdata->id }}</th>
+                                        <td>{{ $empdata->name }}</td>
+                                        <td>{{ $empdata->email }}</td>
+                                        <td>{{ $empdata->phone }}</td>
+                                        <td>{{ $empdata->designation }}</td>
+                                        <td>{{ $empdata->status }}</td>
+                                        <td>Edit</td>
+                                        <td>Delete</td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
