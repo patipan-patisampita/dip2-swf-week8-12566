@@ -32,8 +32,12 @@
                                         <td>{{ $empdata->phone }}</td>
                                         <td>{{ $empdata->designation }}</td>
                                         <td>{{ $empdata->status }}</td>
-                                        <td>Edit</td>
-                                        <td>Delete</td>
+                                        <td>
+                                          <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                                        </td>
                                     </tr>
                                 @endforeach
                             </tbody>
